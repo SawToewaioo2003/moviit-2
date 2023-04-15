@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.two.mylibrary.views.customViews.CustomSwipeRefreshLayout
+            android:id="@+id/swipeHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_recycler_view"
+                android:id="@+id/layout_recycler_view"/>
+
+        </com.two.mylibrary.views.customViews.CustomSwipeRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_loading"
+                android:id="@+id/layout_loading"/>
+            <include
+                android:id="@+id/layout_loading_bottom"
+                layout="@layout/layout_loading_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+            <include layout="@layout/layout_empty"
+                android:id="@+id/layout_empty"/>
+            <include layout="@layout/layout_error"
+                android:id="@+id/layout_error"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

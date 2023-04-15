@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MKLoader">
+        <attr name="mk_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomImageView">
+        <attr name="isCircle"               format="boolean" />
+        <attr name="gravity"                format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCustomView">
+        <attr name="titleColor"             format="color" />
+        <attr name="iconBackGroundColor"    format="color" />
+        <attr name="subtitleColor"          format="color" />
+        <attr name="retryButtonColor"       format="color" />
+        <attr name="retryButtonTextColor"   format="color" />
+        <attr name="emptyTitle"             format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="shimmer_clip_to_children" format="boolean"/>
+        <attr name="shimmer_colored" format="boolean"/>
+        <attr name="shimmer_base_color" format="color"/>
+        <attr name="shimmer_highlight_color" format="color"/>
+        <attr name="shimmer_base_alpha" format="float"/>
+        <attr name="shimmer_highlight_alpha" format="float"/>
+        <attr name="shimmer_auto_start" format="boolean"/>
+        <attr name="shimmer_duration" format="integer"/>
+        <attr name="shimmer_repeat_count" format="integer"/>
+        <attr name="shimmer_repeat_delay" format="integer"/>
+        <attr name="shimmer_repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="shimmer_start_delay" format="integer"/>
+        <attr name="shimmer_direction" format="enum">
+            <enum name="left_to_right" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="bottom_to_top" value="3"/>
+        </attr>
+        <attr name="shimmer_dropoff" format="float"/>
+        <attr name="shimmer_fixed_width" format="dimension"/>
+        <attr name="shimmer_fixed_height" format="dimension"/>
+        <attr name="shimmer_intensity" format="float"/>
+        <attr name="shimmer_width_ratio" format="float"/>
+        <attr name="shimmer_height_ratio" format="float"/>
+        <attr name="shimmer_shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="shimmer_tilt" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerRecyclerView">
+        <attr name="demo_layout" format="reference"/>
+        <attr name="demo_child_count" format="integer"/>
+        <attr name="demo_layout_manager_type" format="enum">
+            <enum name="linear_vertical" value="0" />
+            <enum name="linear_horizontal" value="1" />
+            <enum name="grid" value="2" />
+        </attr>
+        <attr name="demo_grid_child_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation"/>
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_background" format="color|integer"/>
+        <attr name="ci_selected_background" format="color|integer"/>
+        <attr name="ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

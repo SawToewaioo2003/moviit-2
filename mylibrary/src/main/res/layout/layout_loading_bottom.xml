@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/loadingBottomHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparentLoading"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <com.two.mylibrary.views.customViews.MKLoader
+            android:id="@+id/mkLoader"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:mk_color="@color/gray"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loadingTextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/please_wait"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</layout>
